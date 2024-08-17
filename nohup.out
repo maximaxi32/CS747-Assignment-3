@@ -1,0 +1,502 @@
+Parallel processing complete. Output files are in output
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm_dmix.c:1089:(snd_pcm_dmix_open) unable to open slave
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 31, in get_next_state
+    collisions.resolve_all_collisions(self.speculative_gamestate.balls, self.speculative_gamestate.holes, self.speculative_gamestate.table_sides)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/collisions.py", line 14, in resolve_all_collisions
+    if physics.distance_less_equal(ball_hole_combination[0].ball.pos, ball_hole_combination[1].pos, config.hole_radius):
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/physics.py", line 16, in distance_less_equal
+    return (dist_diff[0] ** 2 + dist_diff[1] ** 2) <= dist ** 2
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 64, in update
+    self.generate_top_left_label(game_state)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 111, in generate_top_left_label
+    self.image.blit(top_left_rendered_text, text_pos)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 67, in <module>
+    game.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 63, in update
+    self.redraw()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 60, in redraw
+    pygame.draw.polygon(self.image, color_key, self.points)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 64, in update
+    self.clear_canvas()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 38, in clear_canvas
+    self.image.fill((200, 200, 200))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/ball.py", line 107, in update
+    self.update_sprite()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/ball.py", line 139, in update_sprite
+    new_sprite.blit(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 63, in update
+    self.redraw()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 60, in redraw
+    pygame.draw.polygon(self.image, color_key, self.points)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 67, in <module>
+    game.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 63, in update
+    self.redraw()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 60, in redraw
+    pygame.draw.polygon(self.image, color_key, self.points)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 65, in <module>
+    collisions.resolve_all_collisions(game.balls, game.holes, game.table_sides)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/collisions.py", line 24, in resolve_all_collisions
+    random.shuffle(ball_list)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/random.py", line 306, in shuffle
+    j = randbelow(i+1)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/random.py", line 250, in _randbelow_with_getrandbits
+    def _randbelow_with_getrandbits(self, n):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 63, in update
+    self.redraw()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/table_sprites.py", line 60, in redraw
+    pygame.draw.polygon(self.image, color_key, self.points)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 64, in update
+    self.clear_canvas()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 38, in clear_canvas
+    self.image.fill((200, 200, 200))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 67, in <module>
+    game.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 64, in update
+    self.clear_canvas()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 37, in clear_canvas
+    self.image = pygame.Surface(2 * self.sprite_size)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 64, in update
+    self.clear_canvas()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 38, in clear_canvas
+    self.image.fill((200, 200, 200))
+KeyboardInterrupt
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+run.sh: line 23: syntax error near unexpected token `$random_number'
+run.sh: line 23: `    execute_python_command($random_number) &'
+run.sh: line 23: syntax error near unexpected token `"$random_number"'
+run.sh: line 23: `    execute_python_command("$random_number") &'
+run.sh: line 13: syntax error near unexpected token `seed'
+run.sh: line 13: `execute_python_command(seed) {'
+run.sh: line 13: syntax error near unexpected token `seed'
+run.sh: line 13: `execute_python_command(seed) {'
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 64, in update
+    self.clear_canvas()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 38, in clear_canvas
+    self.image.fill((200, 200, 200))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 64, in update
+    self.clear_canvas()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 38, in clear_canvas
+    self.image.fill((200, 200, 200))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 64, in update
+    self.clear_canvas()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 37, in clear_canvas
+    self.image = pygame.Surface(2 * self.sprite_size)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 40, in get_next_state
+    self.speculative_gamestate.cue.cue_is_active(self.speculative_gamestate, events, 0, action, seed)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 121, in cue_is_active
+    self.ball_hit()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 130, in ball_hit
+    pygame.display.flip()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 115, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 40, in get_next_state
+    self.speculative_gamestate.cue.cue_is_active(self.speculative_gamestate, events, 0, action, seed)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 121, in cue_is_active
+    self.ball_hit()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 130, in ball_hit
+    pygame.display.flip()
+KeyboardInterrupt
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 155, in update_cue
+    dis = np.clip(dis, 0, 1)
+  File "<__array_function__ internals>", line 5, in clip
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2115, in clip
+    return _wrapfunc(a, 'clip', a_min, a_max, out=out, **kwargs)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 54, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 43, in _wrapit
+    result = getattr(asarray(obj), method)(*args, **kwds)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/_methods.py", line 159, in _clip
+    return _clip_dep_invoke_with_casting(
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/_methods.py", line 113, in _clip_dep_invoke_with_casting
+    return ufunc(*args, out=out, **kwargs)
+TypeError: '>=' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 155, in update_cue
+    dis = np.clip(dis, 0, 1)
+  File "<__array_function__ internals>", line 5, in clip
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2115, in clip
+    return _wrapfunc(a, 'clip', a_min, a_max, out=out, **kwargs)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 54, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 43, in _wrapit
+    result = getattr(asarray(obj), method)(*args, **kwds)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/_methods.py", line 159, in _clip
+    return _clip_dep_invoke_with_casting(
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/_methods.py", line 113, in _clip_dep_invoke_with_casting
+    return ufunc(*args, out=out, **kwargs)
+TypeError: '>=' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 155, in update_cue
+    dis = np.clip(dis, 0, 1)
+  File "<__array_function__ internals>", line 5, in clip
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2115, in clip
+    return _wrapfunc(a, 'clip', a_min, a_max, out=out, **kwargs)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 54, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 43, in _wrapit
+    result = getattr(asarray(obj), method)(*args, **kwds)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/_methods.py", line 159, in _clip
+    return _clip_dep_invoke_with_casting(
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/_methods.py", line 113, in _clip_dep_invoke_with_casting
+    return ufunc(*args, out=out, **kwargs)
+TypeError: '>=' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 155, in update_cue
+    dis = np.clip(dis, 0, 1)
+  File "<__array_function__ internals>", line 5, in clip
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2115, in clip
+    return _wrapfunc(a, 'clip', a_min, a_max, out=out, **kwargs)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 54, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 43, in _wrapit
+    result = getattr(asarray(obj), method)(*args, **kwds)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/_methods.py", line 159, in _clip
+    return _clip_dep_invoke_with_casting(
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/_methods.py", line 113, in _clip_dep_invoke_with_casting
+    return ufunc(*args, out=out, **kwargs)
+TypeError: '>=' not supported between instances of 'NoneType' and 'int'
+Traceback (most recent call last):
+  File "main.py", line 67, in <module>
+    game.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 64, in update
+    self.clear_canvas()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 37, in clear_canvas
+    self.image = pygame.Surface(2 * self.sprite_size)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 125, in action
+    return (ans_angle,hit_ball(which_ball,ans_angle))   
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 72, in hit_ball
+    new_ball_pos=self.ns.get_next_state(ball_pos,(angle,f),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 31, in get_next_state
+    collisions.resolve_all_collisions(self.speculative_gamestate.balls, self.speculative_gamestate.holes, self.speculative_gamestate.table_sides)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/collisions.py", line 19, in resolve_all_collisions
+    if physics.line_ball_collision_check(line_ball_combination[0], line_ball_combination[1].ball):
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/physics.py", line 85, in line_ball_collision_check
+    np.hypot(*(closest_line_point - ball.pos + line.line[0])) <= \
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 119, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/ball.py", line 107, in update
+    self.update_sprite()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/ball.py", line 147, in update_sprite
+    is_outside = config.ball_radius < np.hypot(*grid_2d)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 125, in action
+    return (ans_angle,hit_ball(which_ball,ans_angle))   
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 72, in hit_ball
+    new_ball_pos=self.ns.get_next_state(ball_pos,(angle,f),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/ball.py", line 107, in update
+    self.update_sprite()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/ball.py", line 117, in update_sprite
+    label_dimension = np.repeat([self.label_size * 2], 2)
+  File "<__array_function__ internals>", line 5, in repeat
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 479, in repeat
+    return _wrapfunc(a, 'repeat', repeats, axis=axis)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 54, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 83, in <module>
+    game.cue.cue_is_active(game, events, not args.no_render, debug=args.debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 114, in cue_is_active
+    self.update_cue(game_state, action_for_next_state, seed, debug)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/cue.py", line 148, in update_cue
+    angle, dis = self.agent.action(state) 
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/agent.py", line 119, in action
+    new_ball_pos=self.ns.get_next_state(ball_pos,(ans_angle,force),42)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/utils.py", line 32, in get_next_state
+    self.speculative_gamestate.redraw_all()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/gamestate.py", line 149, in redraw_all
+    self.all_sprites.update(self)
+  File "/home/osim8789/anaconda3/envs/cs747/lib/python3.8/site-packages/pygame/sprite.py", line 555, in update
+    sprite.update(*args, **kwargs)
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/ball.py", line 107, in update
+    self.update_sprite()
+  File "/home/osim8789/Documents/CS747/assignment3/CS747-PA3/pool/ball.py", line 150, in update_sprite
+    if is_outside[xy]:
+KeyboardInterrupt
